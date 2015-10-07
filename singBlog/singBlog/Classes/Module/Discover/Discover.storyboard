@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KbR-uX-Fjz">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Discover Controller-->
+        <scene sceneID="C1T-rp-vxn">
+            <objects>
+                <tableViewController id="EZS-go-rrt" customClass="DiscoverController" customModule="新浪微博" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gxz-qR-Mp1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="EZS-go-rrt" id="I5z-c6-1mF"/>
+                            <outlet property="delegate" destination="EZS-go-rrt" id="HKu-ER-lc7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="4MC-H4-x5g"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s2E-cH-qHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="376"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jDA-nS-4bV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KbR-uX-Fjz" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D0u-fW-LcL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="EZS-go-rrt" kind="relationship" relationship="rootViewController" id="AWu-nF-Rb2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ar-IW-MuK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="376"/>
+        </scene>
+    </scenes>
+</document>

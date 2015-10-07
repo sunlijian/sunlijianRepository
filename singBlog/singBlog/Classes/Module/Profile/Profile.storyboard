@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BbA-cK-w9N">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Profile Controller-->
+        <scene sceneID="rQU-uZ-Rhm">
+            <objects>
+                <tableViewController id="wXG-Xe-f4r" customClass="ProfileController" customModule="新浪微博" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kei-8n-BNW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="wXG-Xe-f4r" id="I9v-K4-OZI"/>
+                            <outlet property="delegate" destination="wXG-Xe-f4r" id="dln-4x-Ear"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="1Nq-ph-2jp"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4s5-mD-73S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1102" y="442"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WYp-zJ-gA6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BbA-cK-w9N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ej6-t9-rRj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wXG-Xe-f4r" kind="relationship" relationship="rootViewController" id="E5I-s9-b18"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GIe-KP-W9o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="442"/>
+        </scene>
+    </scenes>
+</document>
