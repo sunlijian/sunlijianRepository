@@ -26,6 +26,7 @@
 		1823AD781BC591E60036E113 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823AD761BC591E60036E113 /* ProfileController.swift */; };
 		1823AD7C1BC592120036E113 /* VisitorLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823AD7A1BC592120036E113 /* VisitorLoginView.swift */; };
 		1823AD7D1BC592120036E113 /* VisitorLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1823AD7B1BC592120036E113 /* VisitorLoginView.xib */; };
+		182727EB1BC632860018433B /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 182727EA1BC632860018433B /* libAFNetworking.a */; };
 		E569DCBFE486716D2A92FD37 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAAC0727E1FFBDB1B3D5D0E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		1823AD761BC591E60036E113 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		1823AD7A1BC592120036E113 /* VisitorLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorLoginView.swift; sourceTree = "<group>"; };
 		1823AD7B1BC592120036E113 /* VisitorLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorLoginView.xib; sourceTree = "<group>"; };
+		182727EA1BC632860018433B /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
 		CDAAC0727E1FFBDB1B3D5D0E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B9B95827D77347F101F5E6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182727EB1BC632860018433B /* libAFNetworking.a in Frameworks */,
 				E569DCBFE486716D2A92FD37 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +254,7 @@
 		333F9847B6ECEC27C6CF644A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				182727EA1BC632860018433B /* libAFNetworking.a */,
 				CDAAC0727E1FFBDB1B3D5D0E /* libPods.a */,
 			);
 			name = Frameworks;
@@ -582,6 +586,10 @@
 				INFOPLIST_FILE = singBlog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.singBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -595,6 +603,10 @@
 				INFOPLIST_FILE = singBlog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.itcast.singBlog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
