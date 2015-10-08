@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1823AD2B1BC590F20036E113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823AD2A1BC590F20036E113 /* AppDelegate.swift */; };
 		1823AD321BC590F20036E113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1823AD311BC590F20036E113 /* Assets.xcassets */; };
-		1823AD351BC590F20036E113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1823AD331BC590F20036E113 /* LaunchScreen.storyboard */; };
 		1823AD401BC590F20036E113 /* singBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823AD3F1BC590F20036E113 /* singBlogTests.swift */; };
 		1823AD4B1BC590F20036E113 /* singBlogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823AD4A1BC590F20036E113 /* singBlogUITests.swift */; };
 		1823AD651BC591C10036E113 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823AD611BC591C10036E113 /* BaseTableViewController.swift */; };
@@ -26,8 +25,11 @@
 		1823AD781BC591E60036E113 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823AD761BC591E60036E113 /* ProfileController.swift */; };
 		1823AD7C1BC592120036E113 /* VisitorLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823AD7A1BC592120036E113 /* VisitorLoginView.swift */; };
 		1823AD7D1BC592120036E113 /* VisitorLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1823AD7B1BC592120036E113 /* VisitorLoginView.xib */; };
-		182727EB1BC632860018433B /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 182727EA1BC632860018433B /* libAFNetworking.a */; };
-		E569DCBFE486716D2A92FD37 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAAC0727E1FFBDB1B3D5D0E /* libPods.a */; };
+		182727EE1BC647C20018433B /* OAuthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182727ED1BC647C20018433B /* OAuthController.swift */; settings = {ASSET_TAGS = (); }; };
+		182727F01BC647F40018433B /* OAuth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 182727EF1BC647F40018433B /* OAuth.storyboard */; settings = {ASSET_TAGS = (); }; };
+		182727F21BC6759D0018433B /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182727F11BC6759D0018433B /* NetWorkTools.swift */; settings = {ASSET_TAGS = (); }; };
+		182727F41BC68D410018433B /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182727F31BC68D410018433B /* UserAccount.swift */; settings = {ASSET_TAGS = (); }; };
+		9C7B8F9F9EBCAFC8B95F4FE9 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF8649CD6FB0ACD0F8DB4242 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +54,6 @@
 		1823AD271BC590F20036E113 /* singBlog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = singBlog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1823AD2A1BC590F20036E113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1823AD311BC590F20036E113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1823AD341BC590F20036E113 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1823AD361BC590F20036E113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1823AD3B1BC590F20036E113 /* singBlogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = singBlogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1823AD3F1BC590F20036E113 /* singBlogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = singBlogTests.swift; sourceTree = "<group>"; };
@@ -75,8 +76,12 @@
 		1823AD7A1BC592120036E113 /* VisitorLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorLoginView.swift; sourceTree = "<group>"; };
 		1823AD7B1BC592120036E113 /* VisitorLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorLoginView.xib; sourceTree = "<group>"; };
 		182727EA1BC632860018433B /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
-		CDAAC0727E1FFBDB1B3D5D0E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		182727ED1BC647C20018433B /* OAuthController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthController.swift; sourceTree = "<group>"; };
+		182727EF1BC647F40018433B /* OAuth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = OAuth.storyboard; sourceTree = "<group>"; };
+		182727F11BC6759D0018433B /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
+		182727F31BC68D410018433B /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
 		E2B9B95827D77347F101F5E6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		EF8649CD6FB0ACD0F8DB4242 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				182727EB1BC632860018433B /* libAFNetworking.a in Frameworks */,
-				E569DCBFE486716D2A92FD37 /* libPods.a in Frameworks */,
+				9C7B8F9F9EBCAFC8B95F4FE9 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +138,6 @@
 				1823AD581BC591970036E113 /* Classes */,
 				1823AD2A1BC590F20036E113 /* AppDelegate.swift */,
 				1823AD311BC590F20036E113 /* Assets.xcassets */,
-				1823AD331BC590F20036E113 /* LaunchScreen.storyboard */,
 				1823AD361BC590F20036E113 /* Info.plist */,
 			);
 			path = singBlog;
@@ -162,8 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				1823AD591BC591970036E113 /* Model */,
-				1823AD5A1BC591970036E113 /* Module */,
 				1823AD601BC591970036E113 /* Tools */,
+				1823AD5A1BC591970036E113 /* Module */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 		1823AD591BC591970036E113 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				182727F31BC68D410018433B /* UserAccount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,10 +182,11 @@
 		1823AD5A1BC591970036E113 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				1823AD5B1BC591970036E113 /* Discover */,
-				1823AD5C1BC591970036E113 /* Home */,
+				182727EC1BC646910018433B /* OAuth */,
 				1823AD5D1BC591970036E113 /* Main */,
+				1823AD5C1BC591970036E113 /* Home */,
 				1823AD5E1BC591970036E113 /* Message */,
+				1823AD5B1BC591970036E113 /* Discover */,
 				1823AD5F1BC591970036E113 /* Profile */,
 			);
 			path = Module;
@@ -238,6 +243,7 @@
 		1823AD601BC591970036E113 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				182727F11BC6759D0018433B /* NetWorkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -251,11 +257,20 @@
 			path = VisitorLoginView;
 			sourceTree = "<group>";
 		};
+		182727EC1BC646910018433B /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				182727ED1BC647C20018433B /* OAuthController.swift */,
+				182727EF1BC647F40018433B /* OAuth.storyboard */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
 		333F9847B6ECEC27C6CF644A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				182727EA1BC632860018433B /* libAFNetworking.a */,
-				CDAAC0727E1FFBDB1B3D5D0E /* libPods.a */,
+				EF8649CD6FB0ACD0F8DB4242 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,6 +296,7 @@
 				1823AD241BC590F20036E113 /* Frameworks */,
 				1823AD251BC590F20036E113 /* Resources */,
 				52F68F5D94B059872EAEE937 /* Copy Pods Resources */,
+				4B559925AB044BF65E964B08 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,9 +393,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182727F01BC647F40018433B /* OAuth.storyboard in Resources */,
 				1823AD661BC591C10036E113 /* Main.storyboard in Resources */,
 				1823AD7D1BC592120036E113 /* VisitorLoginView.xib in Resources */,
-				1823AD351BC590F20036E113 /* LaunchScreen.storyboard in Resources */,
 				1823AD6F1BC591D60036E113 /* Discover.storyboard in Resources */,
 				1823AD321BC590F20036E113 /* Assets.xcassets in Resources */,
 				1823AD731BC591DE0036E113 /* Message.storyboard in Resources */,
@@ -420,6 +436,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		4B559925AB044BF65E964B08 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		52F68F5D94B059872EAEE937 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -450,7 +481,10 @@
 				1823AD2B1BC590F20036E113 /* AppDelegate.swift in Sources */,
 				1823AD6C1BC591CC0036E113 /* HomeController.swift in Sources */,
 				1823AD7C1BC592120036E113 /* VisitorLoginView.swift in Sources */,
+				182727F41BC68D410018433B /* UserAccount.swift in Sources */,
 				1823AD781BC591E60036E113 /* ProfileController.swift in Sources */,
+				182727F21BC6759D0018433B /* NetWorkTools.swift in Sources */,
+				182727EE1BC647C20018433B /* OAuthController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,17 +518,6 @@
 			targetProxy = 1823AD471BC590F20036E113 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1823AD331BC590F20036E113 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1823AD341BC590F20036E113 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1823AD4D1BC590F20036E113 /* Debug */ = {

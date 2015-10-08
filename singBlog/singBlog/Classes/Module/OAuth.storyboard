@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yvj-7p-7yo">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Auth Controller-->
+        <scene sceneID="xDP-hf-bew">
+            <objects>
+                <viewController id="Kb5-n4-vWH" customClass="OAuthController" customModule="singBlog" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="aUI-tw-p5g">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </webView>
+                    <navigationItem key="navigationItem" id="UTp-Ie-Wyv">
+                        <barButtonItem key="leftBarButtonItem" title="关闭" id="pBy-iq-KKg">
+                            <color key="tintColor" red="1" green="0.74386771920000005" blue="0.52381824580000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="closeItem:" destination="Kb5-n4-vWH" id="IsQ-KU-PXV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="自动登陆" id="Fsu-cn-dNu">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="autoLoginItem:" destination="Kb5-n4-vWH" id="Hew-Vk-Dvc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dU8-tp-5Ee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1335" y="240"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nuw-95-4bt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yvj-7p-7yo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QpR-ud-gdu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kb5-n4-vWH" kind="relationship" relationship="rootViewController" id="8ev-kv-UhT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9MZ-WC-R5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="259"/>
+        </scene>
+    </scenes>
+</document>

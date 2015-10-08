@@ -40,7 +40,12 @@ class BaseTableViewController: UITableViewController, VisitorViewDelegate {//2 �
     
     //3 实现代理方法
     func visitorWillLogin() {
-        print(__FUNCTION__)
+        //获取 OAuth storyboard
+        let sb = UIStoryboard(name: "OAuth", bundle: nil)
+        //获取 controller
+        let vc = sb.instantiateInitialViewController()
+        //加载控制器
+        presentViewController(vc!, animated: true, completion: nil)
     }
     
     func visitorWillRegister() {

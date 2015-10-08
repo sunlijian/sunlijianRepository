@@ -8,7 +8,7 @@
         <!--Profile Controller-->
         <scene sceneID="rQU-uZ-Rhm">
             <objects>
-                <tableViewController id="wXG-Xe-f4r" customClass="ProfileController" customModule="新浪微博" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="wXG-Xe-f4r" customClass="ProfileController" customModule="singBlog" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kei-8n-BNW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
