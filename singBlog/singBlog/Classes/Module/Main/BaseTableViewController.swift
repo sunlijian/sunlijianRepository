@@ -43,9 +43,9 @@ class BaseTableViewController: UITableViewController, VisitorViewDelegate {//2 �
         //获取 OAuth storyboard
         let sb = UIStoryboard(name: "OAuth", bundle: nil)
         //获取 controller
-        let vc = sb.instantiateInitialViewController()
+        let vc = sb.instantiateInitialViewController() as! UINavigationController
         //加载控制器
-        presentViewController(vc!, animated: true, completion: nil)
+        presentViewController(vc, animated: true, completion: nil)
     }
     
     func visitorWillRegister() {

@@ -9,10 +9,13 @@
         <scene sceneID="xDP-hf-bew">
             <objects>
                 <viewController id="Kb5-n4-vWH" customClass="OAuthController" customModule="singBlog" customModuleProvider="target" sceneMemberID="viewController">
-                    <webView key="view" contentMode="scaleToFill" id="aUI-tw-p5g">
+                    <webView key="view" contentMode="scaleToFill" id="gIU-p7-tVz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="delegate" destination="Kb5-n4-vWH" id="ext-7K-L6x"/>
+                        </connections>
                     </webView>
                     <navigationItem key="navigationItem" id="UTp-Ie-Wyv">
                         <barButtonItem key="leftBarButtonItem" title="关闭" id="pBy-iq-KKg">

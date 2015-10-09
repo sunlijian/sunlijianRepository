@@ -14,25 +14,24 @@ class NetWorkTools: AFHTTPSessionManager {
     //声明属性
     let client_id = "1520523895"
     let redirect_uri = "http://www.baidu.com"
-    let pageURL = "https://api.weibo.com/oauth2/authorize"
+    
     let client_secret = "86a54789f611c92264b610cd671ee17e"
     //创建单例对象
     static let sharedTools: NetWorkTools = {
         let url = NSURL(string: APP_ROOT_URL)!
         let tools = NetWorkTools(baseURL: url)
-        tools.responseSerializer.acceptableContentTypes?.insert("text.plain")
+        tools.responseSerializer.acceptableContentTypes?.insert("text/plain")
         return tools
     }()
     
     //设置请求url
     func oAuthURL() -> NSURL{
+        let pageURL = "https://api.weibo.com/oauth2/authorize"
         //请求的 url
-        let urlString = pageURL + "?" + "client_id=" + client_id + "&redirect_uri=" + redirect_uri
+        let urlString = pageURL + "?client_id=" + client_id + "&redirect_uri=" + redirect_uri
         print(urlString)
         
-        let url = NSURL(string: urlString)!
-        
-        return url
+        return  NSURL(string: urlString)!
     }
     
     

@@ -20,12 +20,12 @@ import SVProgressHUD
 //请求
 //https://api.weibo.com/oauth2/authorize?client_id=123050457758183&redirect_uri=http://www.example.com/response&response_type=code
 
-class OAuthController: UIViewController,UIWebViewDelegate {
+class OAuthController: UIViewController, UIWebViewDelegate {
     
     
-    let client_id = "1520523895"
-    let redirect_uri = "http://www.baidu.com"
-    let pageURL = "https://api.weibo.com/oauth2/authorize"
+//    let client_id = "1520523895"
+//    let redirect_uri = "http://www.baidu.com"
+//    let pageURL = "https://api.weibo.com/oauth2/authorize"
     
     
     //获取一个 webView
@@ -48,7 +48,7 @@ class OAuthController: UIViewController,UIWebViewDelegate {
     }
     
     
-    //当开始加载请求的时候的会调用此方法
+    //当开始加载请求的时候的会调用此方法   bug: 方法不调用 
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
         //获取要加载 请求的网址
@@ -66,7 +66,7 @@ class OAuthController: UIViewController,UIWebViewDelegate {
         
         //走到这 说明有 www.baidu.com
         if let query = request.URL?.query{
-            let codeStr = "coder"
+            let codeStr = "code="
             
             let code = (query as NSString).substringFromIndex(codeStr.characters.count)
             
@@ -89,8 +89,8 @@ class OAuthController: UIViewController,UIWebViewDelegate {
     //点击自动登陆
     @IBAction func autoLoginItem(sender: AnyObject) {
         
-        let jsstring = "document.getElementById('userId').value = '366799188@qq.com';document.getElementById('passwd').value = '2431009'"
-        webView.stringByEvaluatingJavaScriptFromString(jsstring)
+//        let jsstring = "document.getElementById('userId').value = '366799188@qq.com';document.getElementById('passwd').value = '2431009'"
+//        webView.stringByEvaluatingJavaScriptFromString(jsstring)
     }
     
     
@@ -100,9 +100,9 @@ class OAuthController: UIViewController,UIWebViewDelegate {
     }
     //当加载完的时候
     func webViewDidFinishLoad(webView: UIWebView) {
-        let jsstring = "document.title"
-        let webTitle = webView.stringByEvaluatingJavaScriptFromString(jsstring)
-        title = webTitle
+//        let jsstring = "document.title"
+//        let webTitle = webView.stringByEvaluatingJavaScriptFromString(jsstring)
+//        title = webTitle
         
         SVProgressHUD.dismiss()
     }
